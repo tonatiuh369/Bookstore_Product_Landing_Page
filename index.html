@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Landing Page: Bookstore</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+   <div id="page-wrapper">
+
+      <!-- Navbar - header --> 
+      <header id="header">
+         <div class="logo">
+            <img id="header-img" src="images/logo.png" alt="Bookstore logo">    
+         </div>   
+         <nav id="nav-bar">
+             <div class="search-container"> 
+                <form action=""> <!-- <form action="/action_page_Address.php">-->
+                   <input type="text" name="search" placeholder="Search by author, title, genre or ISBN">    
+                   <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+             </div>
+             <ul>
+                 <li><a class="nav-link" href="#pricing">Featured</a></li>    
+                 <li><a class="nav-link" href="#video-news">Video</a></li>    
+                 <li><a class="nav-link" href="#features">Guaranteed</a></li>    
+                 <li><a class="nav-link" href="#subscribe">Subscribe</a></li>    
+             </ul> 
+         </nav>    
+      </header>   
+      <!-- End of Navbar - header --> 
+
+      <div class="container">
+ 
+        <section id="pricing"> <!-- ***Recomendaciones de la semana*** -->
+            <div class="product" id="tenor">
+              <!-- <img class="product-image" src="https://lh3.googleusercontent.com/aPEQpNfZrvjIR0mq98e5XjnHwSLS8PxZ09YvsmY6hmiNquzLFBzCIXNG2yDto-u4kly7JOQ-OVXTidKlrZasUsj40rQIauoJ5YdTP15CoODYBqV0Bl-iVyqqAkBk8pNE-dVkF3Eml7I8ijtZH7KlKS71fcWm5dg5bj3bOd2dFzgwLaA7wjSeCVmpIxRmf_8_IkCI4n7EhFww9eN4-pNURPoHPRNGMf4Bqt0IjKdM7KfpfRlZJW0BtFozuqZtSU0GaBpN6dwxKbq49Vfjggg1YZtWZLNiw3Nz0aF5tY310dBdF2Go3UYNNYWspAFhCMS9ZecSoaLXRCW-wwULKm16PVxVoDuGSxgmR8X1VOXeQJshnbQEV7-NA-uMR2FkaGsJQ3fynyXYihbTz5taNxYGz4yZ12MRcd_uH_u41Q6zM6zIsNgRw9xm_ZMkoYrWp8XNgEbtklLNRVobB30DKQjXzjyGqW9goSupekI3ylUNUF_MjsrLDqgkE0RiTn1Yvwxb_M7L6O4-BKv3v7ZBrO8mMGd0TvjsinIItu0J9tR0pGFKhVN2hFix4KJGgxnhoh03rcwY6_jd0kQ63JHgfEcfqkUtzB3PqC9Sh-619U9J3Ni0ImW0A5pStG08W4E21PcP9x6sr8x8gIitpu2zb3y3YKvZcUm9VIwgCiTMjkc-051XF338rKc4tmnhY3o6VuexjO38alDdiMFJ5hxeSzzUsE0=w328-h400-no?authuser=0" alt="book cover"> -->
+              <img class="product-image" src="images/Julia Cameron - The Artists Way -height..400px.jpg" alt="book cover">
+              <div class="level">The Artist's Way <span><br />by Julia Cameron</span></div>   
+               <h2>$16<sup>95</sup></h2>
+               <!-- <ol>
+                 <li>Lorem ipsum.</li>
+                 <li>Lorem ipsum dolor.</li>
+               </ol> -->
+               <button class="btn">Select</button>
+            </div>  
+            <div class="product" id="bass">
+              <!-- <img class="product-image" src="https://lh3.googleusercontent.com/pOObr6GD0JkIswgY_-mfQMhefu8Kz-mtVBswRcVG4Q2cq6cHHmhgMdM7YMKo1kDVfjxdIWG_cy7A0vt0k--RK03URUw6J6m3OZdNnhVH_bCnTsOQnHqoZzio3Kes71v9ObBwmZVQQgUfZOhd8E13duBhM2f_y0Xs6lk9Fh-ggJEI6s0sZW6cFkiF7-RA0bDDd8JwV7J41uRDKiFqe6cDoOMMeGAUfZ7z-KMShr_hPnHT7tBLyU5hxGLorP86lKXWxmKVpAwTuzZz7c6p7WCQnOzxL5RbJCKxcuHad-RHYvBXSnEocf0M9tBzCQHWcYlxtUDjginrHy6gBtUc-SfTBCZra51hWRcdfNbbnfdJyx5kUYNKqqqVO9sHdoWR2binqfgIQuJ8cYjB1kZVCvoDx2b0GOL_T3ZbLjir9BnWCmp2O9ByWLr1c6b2ci3KaTmoqrjo8XlKFbQKd_7UyMJ-kl5V4mWPiCUBEzYNDuu0VL8S3lOaXQ8IzLiiQVmAI1NjKoeLaqLCcZH8-M4onseWtV_Ae3njZHtNhCmEebubBwt4CCUkGvdlhdtMtHGnO7mG2eFqoXqcUAgNqupwYiVPcybCN2Ca84F8UEQcD7DJSu-ZlI8fqIP4OCxn74fN2hnFp44GV13w_t6wKNAfNLrqk6ELapMf2k0ehYfyYBopI0h6b3P3sl3sVch7hsT4X_-O6NMRkc9VIWKYFWglkHKFOTQ=w251-h400-no?authuser=0" alt="book cover"> -->
+              <img class="product-image" src="images/Jostein Gaarder - Sophies World -height..400px.jpg" alt="book cover">
+              <div class="level">Sophie's World <span><br />by Jostein Gaarder</span></div>
+               <h2>$15<sup>90</sup></h2>
+               <!-- <ol>
+                 <li>Lorem ipsum.</li>
+                 <li>Lorem ipsum dolor.</li>
+               </ol> -->
+               <button class="btn">Select</button>
+             </div>
+             <div class="product" id="valve">
+               <!-- <img class="product-image" src="https://lh3.googleusercontent.com/BVGK8yxzIJdEsAaaHj3G-uiVQp7MsOluCU9VcpH6mZnkB07yCKHfd182HCZhAD3bGU2hxxK1aF65MQqLoBjMYDeef-Gc37TdurImkSbe7k8W2yYEBNf9h_C8xoYe2IDzpaeh7OArGd9sJsxSR1j6xrhOhf8kHFV1RkpQJ7pB4qJg8KaatQM47bvBPt9f9IluhouTMt8aIn7-2SGMB7qfYukYYmg38teaw91_DvPKa2TGbHDceX3u-if6nqvCGK4g6q9IlXquldAliXWEEmaAc6io27tffL9o0bNJc1c9iw1HzccxubFy41oMuaqb6Y6LJNbTHppQlKnTX0ZN05MdDy5O5vumEpmhfCpsJZ0V_tiRvbgTlnzQJuMdW-JG2MskFUa9JIxJlouR3jmDfHUA8tpS5bj-6D_5zHy8Ip0AdzkXlZn5kBrZ6vu8k2-MnDG3QcyEMCSsu-mhCVrtmJvMPxXPr6rzGdY7bzE2MH9K2GlygxL9XvHyoVSadMToVN88RO7N9Ciw0oQmg2rKeplx_ffAdg_rnH3ScqL795yDUQXxsBdVZbnNuHwSsX0SE8mfr4md4oAjHVKvf-qhSgBqW9rZOTyJPycUGcOUxpestORv8_9fwdIKhP2F589BTBIjAGSCpNH3sBAp3llUGgftlnPW1ohJtLkf9w4nkG-wJL8I65OkalXpLwFIWSQ-oLIOFQJ6vhxtQB8qEYWn6lNqvxo=w246-h400-no?authuser=0" alt="book cover"> -->
+               <img class="product-image" src="images/Walt Whitman.. Poetry and Prose -height..400px.jpg" alt="book cover">
+               <div class="level">Poetry and Prose <span><br />by Walt Whitman</span></div>
+               <h2>$14<sup>95</sup></h2>
+               <!-- <ol>
+                 <li>Lorem ipsum.</li>
+                 <li>Lorem ipsum dolor.</li>
+               </ol> -->
+               <button class="btn">Select</button>
+             </div>
+          </section>
+
+          <section id="video-news">  <!--  ****Falta agregar el VIDEO ****--> <!-- ***Sabías que...*** -->
+               <!-- <iframe id="video" src="#" allowfullscreen="" height="315" frameborder="0"></iframe> -->
+               <!-- ***Make Responsive Youtube video*** -->
+              <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/?playlist=r--wz576ke0,2pWCyUys6lM,6ibCtsHgz3Y&cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+          </section>
+         
+          <section id="features"> <!-- ***Nuestro sello*** -->
+            <div class="grid">
+              <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+              <div class="desc">
+                <h2>The most read books of all publishers</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse eos nobis sequi rerum error dolorum excepturi minus, voluptatibus.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+              <div class="desc">
+                <h2>Fast Shipping</h2>
+                <p>
+                  We make sure you recieve your books as soon as possible. We also provide free returns if you are not satisfied.
+                </p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="icon">
+                <i class="fas fa-grin-stars fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class="desc">
+                <h2>Total Satisfaction</h2>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse eos nobis sequi rerum error dolorum excepturi minus, voluptatibus.
+                </p>
+              </div>
+            </div>
+          </section>
+        
+           <section id="subscribe"> <!-- ***Subscribe***-->
+            <h2>Be the first to know about our new books and get exclusive promotions!</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+               <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+               <input id="submit" type="submit" value="Subscribe" class="btn">
+            </form>
+         </section>
+   
+       </div>  
+
+       <footer> <!-- ***Footer/Contact*** -->
+        <ul>
+           <li><a href="#">Privacy</a></li>
+           <li><a href="#">Terms</a></li> 
+           <li><a href="#">About</a></li> 
+           <li><a href="#">Contact</a></li> 
+        </ul>    
+        <span>Copyright 2021, Imagine Bookstore</span>
+     </footer>
+
+    </div>
+</body>
+</html>
